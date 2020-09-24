@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************GENERIQUE*****************/
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+h2 
+{
+    font-size: 4.75rem;
+    color: #ffffff;
+    
+}
+
+p
+{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+body 
+{
+    background-color: #bf964b;
+    font-size: 16px;
+}
+/**************HEADER**************/
+
+.wrapper-nav 
+{
+    height: 183px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #736c4d;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 999;
+}
+
+.nav-title
+{
+    margin: auto auto auto 80px;
+}
+
+.header-nav
+{
+
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header-nav a
+{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+}
+
+header
+{
+    height: 100vh;
+    background:  no-repeat 
+    url(asset/img/header/img-pasta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper-header
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-title
+{
+    position: absolute;
+    bottom: 145px;
+    left: 85px;
+    font-size: 122px;
+    color: #ffffff;
+}
+
+.big-title span 
+{
+
+    font-size: 77px;
+}
+
+.header-button 
+{
+    position: absolute;
+    bottom: 145px;
+    right: 85px;
+}
+
+.button 
+{
+    padding:20px 30px 20px 30px;
+    font-size: 36px;
+    background-color: #bf964b;
+    color: #ffffff;
+    border: none;
+}
+
+
+
+
+/***********MAIN**********/
+
+
+
+.container 
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* ABOUT US 1er ROW DE CONTAINER*/
+
+.about-us 
+{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    
+}
+
+.img-rose
+{
+    transform: translate(-50%);
+}
+
+.p-about-us 
+{
+    position: absolute;
+    left: 40%;
+    right: 10%;
+    margin-right: 300px;
+    line-height: 1.3;
+    
+}
+
+.p-about-us h2 {
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+/*CONTACT 2ieme ROW DE CONTAINER*/
+
+.contact-us 
+{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height:100vh;
+background-color: #736c4d;
+}
+
+.p-contact-us
+{
+    width: 600px;
+}
+
+.p-contact-us h2 {
+    margin-bottom: 50px;
+    font-size: 3.43rem;
+    color: #ffffff;
+}
+
+.p-contact-us button
+{
+    margin-top: 30px;
+    padding:20px 30px 20px 30px;
+    font-size: 36px;
+    background-color: #bf964b;
+    color: #ffffff;
+    border: none;
+}
+
+/*MENU FOOD 3ieme ROW DE CONTAINER*/
+
+.menu-food
+{
+    min-width: 100vh;
+}
+
+.menu-food h2
+{
+text-align: center;
+padding: 5% 5%;
+}
+
+.menu-food-img
+{
+    display: flex;
+    justify-content: space-around;
+}
