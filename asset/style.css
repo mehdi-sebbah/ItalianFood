@@ -111,7 +111,7 @@ header
 {
     height: 100vh;
     background:  no-repeat 
-    url(asset/img/header/img-pasta.jpg);
+    url(../asset/img/header/img-pasta.jpg);
     background-size: cover;
     background-position: center;
 }
