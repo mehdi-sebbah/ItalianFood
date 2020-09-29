@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="shortcut icon" href="asset/img/favicone.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Roboto:wght@100;400&display=swap"
         rel="stylesheet">
+    <script src="asset/function.js"></script>
     <title>Italianfood</title>
 </head>
 
@@ -15,13 +17,25 @@
         <div class="nav-title">
             <h1><img src="asset/img/header/header-title.png" alt="olive" height="100px"></h1>
         </div>
-        <nav class="header-nav">
+        <div class="header-nav">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Order</a>
             <a href="#">Contact Us</a>
-        </nav>
+        </div>
     </div>
+    <nav class="nav" onclick="myfunction(this)">
+        <div class="menu-burger">
+            <span class="trait"></span>
+        </div>
+        <div class="header-nav-2" onclick="myfunction(this)">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Order</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    </nav>
     <header>
         <div class="wrapper-header">
             <h1 class="big-title"><span>The</span> Italian <br> Restaurant</h1>
@@ -94,7 +108,7 @@
                 <img src="asset/img/main/point-lieu.png" alt="point">
                 <div class="info-map">
                     <div class="map-p-1">
-                        <h2>find us at</h2>
+                        <h2>FIND US AT</h2>
                     </div>
                     <div class="map-p-2">
                         <p>101 ST, Buenos Aires</p>
