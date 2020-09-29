@@ -390,13 +390,9 @@ background-color: #736c4d;
 
 /*MAP GEOGRAPHIQUE DU RESTAURANT*/
 
-.map
+#mapid
 {
     height: 100vh;
-    background: no-repeat url(/asset/img/main/map.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .map img
@@ -409,11 +405,12 @@ background-color: #736c4d;
 
 .info-map
 {
-    position: relative;
+    position: absolute;
     text-align: center;
     background-color:rgba(115, 108, 77, 0.8) ;
     width: 37%;
-    height: 100%;
+    height: 100vh;
+    z-index: 995;
 }
 
 .map-p-1
