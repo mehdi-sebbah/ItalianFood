@@ -68,6 +68,7 @@ h3
     font-weight: 600;
     font-size: 2rem;
     color: #ffffff;
+    margin-bottom: 70px;
 }
 
 p
@@ -96,6 +97,33 @@ body
 {
     background-color: #bf964b;
     font-size: 16px;
+}  
+
+.menu-burger
+{
+    display: none;
+}
+
+.header-nav-2
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content:space-around;
+
+    align-items: center;
+    position: fixed;
+    top: -105%;
+    transition: top 0.5s ease;
+
+    right: 0;
+    width: 200px;
+    height: 100vh;
+
+    margin-top: 72px;
+    padding-bottom: 25px;
+
+    background-color: rgba(115, 108, 77, 0.5);
+    z-index: 998;
 }
 /**************HEADER**************/
 
@@ -137,7 +165,7 @@ header
     height: 100vh;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)),
-    url(../asset/img/header/img-pasta.jpg);
+    url(../img/header/img-pasta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -275,10 +303,6 @@ background-color: #736c4d;
 .menu-food-img p
 {
     padding-top: 10px;
-}
-
-.menu-food-img p
-{
     text-align: center;
     font-size: 1.85rem;
 }
@@ -292,12 +316,6 @@ background-color: #736c4d;
     align-items: center;
     margin-top: 200px;
     margin-left: 10%;
-}
-
-.img-spaguetti-back
-{
-
-    transform: translate(50%);
 }
 
 .discount-code 
@@ -331,11 +349,16 @@ background-color: #736c4d;
     color: #736c4d;
 }
 
+.img-spaguetti-back
+{
+    transform: translate(50%);
+}
+
 /*IMAGE 100% LARGEUR*/
 
 .img-max-width
 {
-    background: no-repeat url(../asset/img/main/img_max_width.jpg);
+    background: no-repeat url(../img/main/img_max_width.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -346,6 +369,7 @@ background-color: #736c4d;
 .van-gogh 
 {
     height: 100vh;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,7 +393,7 @@ background-color: #736c4d;
 .map
 {
     height: 100vh;
-    background: no-repeat url(../asset/img/main/map.jpg);
+    background: no-repeat url(/asset/img/main/map.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -406,14 +430,13 @@ background-color: #736c4d;
 
 .map-p-1 h2
 {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .map-p-2
 {
     display: flex;
     flex-direction: column;
-    justify-content: end;
     height: 50%;
     width: 80%;
     margin: auto;
@@ -436,7 +459,7 @@ background-color: #736c4d;
 
 .div-footer
 {
-    margin: 100px;
+    margin: 10px 10px;
 }
 
 .row-1-footer 
@@ -445,24 +468,7 @@ background-color: #736c4d;
     grid-template-columns: 4fr 1fr 1fr 1fr;
     grid-template-areas: 
         " index1 . index2 index3";
-    margin: 150px 50px;
-}
-
-
-
-.row-2-footer
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 150px;
-}
-
-
-.nav-footer a
-{
-    padding: 10px;
-    margin: auto;
+    margin: 110px 0 110px 110px;
 }
 
 .column-1-footer
@@ -483,9 +489,17 @@ background-color: #736c4d;
     text-align: start;
 }
 
-h3
+.row-2-footer
 {
-    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.nav-footer a
+{
+    padding: 10px;
+    margin: auto;
 }
 
 /*Bordure du footer*/
@@ -495,48 +509,182 @@ h3
     background-color: #736c4d;
 }
 
+/**********RESPONSIVE**********/
 
-    /*****************MENU BURGER********************/   
 
-    .menu-burger
+/*Largeur du texte (contact-us)*/
+
+@media(max-width: 650px)
+{
+    .img-contact-us
     {
-        display: none;
+        width: 85%;
     }
 
-    .header-nav-2
+    .img-contact-us img
     {
-        display: flex;
-        flex-direction: column;  
-        justify-content:space-around;
+        width: 100%;
+    }
+    .p-contact-us
+    {
+        width: 470px;
+    }
+}
 
-        align-items: center;
-        position: fixed;
-        top: -105%;
-        transition: top 0.5s ease;
+@media(max-width: 900px)
+{
 
-        right: 0;
-        width: 200px;
-        height: 100vh;
+    /*taille police (map)*/
 
-        margin-top: 72px;
-        padding-bottom: 25px;
+    .map-p-1 h2 
+    {
+        font-size: 3rem;
+    }
 
-        background-color: rgba(115, 108, 77, 0.5);
-        z-index: 998;
+    .map-p-2 p 
+    {
+        font-size: 1.5rem;
+    }
+
+    /*Ajustement margin de la div complète dans le footer*/
+
+    .div-footer
+    {
+        margin: 20px auto;
+    }
+}
+
+/*Taille police (CITATION VAN-GOGH)*/
+
+@media(max-width: 950px)
+{
+    .p-van-gogh
+    {
+        font-size: 1.8rem;
+    }
+
+    .name-van-gogh
+    {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 1000px)
+{
+
+    /*Margin left du titre*/
+
+    .nav-title
+    {
+        margin-left: 38px;
+    }
+
+    /*Gestion des images de plat*/
+
+    .menu-food h2
+    {
+        margin: 50px 0;
+    }
+    .menu-food-img
+    {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    }
+
+    .menu-food-img div p
+    {
+        margin: 25px 0;
+        padding: 0;
+    }
+
+    /*Partie textuelle du code promo*/
+
+    .container-discount-code
+    {
+        margin: 0;
+    }
+
+    .discount-code
+    {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .discount-code h2
+    {
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .discount-code p 
+    {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+
+    .discount-code button 
+    {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /*Background image du code promo*/
+
+    .img-spaguetti-back
+    {
+        transform: translate(30%);
+        opacity: 0.4;
+    }
+
+    /*Footer*/
+
+    .row-1-footer
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "index1 index1"
+        "index2 index3";
+        margin: 50px;
+    }
+
+    .column-1-footer
+    {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .column-2-footer
+    {
+        text-align: center;
+        margin-bottom: 40px;
 
     }
+
+    .column-3-footer
+    {
+        text-align: center;
+    }
+
+    .row-2-footer
+    {
+        margin: 50px;
+    }
+}
+
+/*****************MENU BURGER********************/ 
 
 @media(max-width: 1100px)
 {
- 
     .header-nav
     {
         display: none;
-    }
-
-    .nav
-    {
-     
     }
 
     .menu-burger
@@ -550,7 +698,6 @@ h3
         right: 2%;
 
         z-index: 1001;
-
     }
 
     .menu-burger span.trait
@@ -602,12 +749,8 @@ h3
     } 
 
     .change .header-nav-2 
-    {
-        
-        
+    { 
         top: 0;
-        
-
     }
 
     .header-nav-2 a
@@ -615,169 +758,13 @@ h3
         color: white;
         font-size: 2.3rem;
         text-decoration: none;
-
-    }
-    
-}
-
-/* REGLES DU RESPONSIVE VIEWPORT PASSE A 1242PX ET MOINS */
-
-@media(max-width: 650px)
-{
-    .p-contact-us
-    {
-        width: 470px;
     }
 }
 
-    .div-footer
-    {
-        margin: 10px 10px;
-    }
-    
-/*CITATION VAN-GOGH*/
-
-@media(max-width: 950px)
-{
-    .p-van-gogh
-    {
-        font-size: 2rem;
-    }
-
-    .name-van-gogh
-    {
-        font-size: 2rem;
-    }
-
-}
-
-
-@media(max-width: 900px)
-{
-    .map-p-1 h2 
-    {
-        font-size: 3rem;
-    }
-
-    .map-p-2 p 
-    {
-        font-size: 1.5rem;
-    }
-
-    .div-footer
-    {
-        margin: 20px auto;
-    }
-}
-
-@media(max-width: 1000px)
-{
-
-    .row-1-footer
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "index1 index1"
-        "index2 index3";
-        margin: 50px;
-    }
-
-    .column-1-footer
-    {
-        text-align: center;
-        margin-bottom: 70px;
-    }
-
-    .column-2-footer
-    {
-        text-align: center;
-        margin-bottom: 40px;
-
-    }
-
-    .column-3-footer
-    {
-        text-align: center;
-    }
-
-    .row-1-footer h3
-    {
-        margin-bottom: 20px;
-    }
-
-    .row-2-footer
-    {
-        margin: 50px;
-    }
-
-
-    
-
-    .menu-food-img
-    {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    }
-    .menu-food-img div 
-    {
-        margin-bottom: 30px;
-    }
-    .menu-food-img div p
-    {
-        margin-top: 30px;
-    }
-
-    .container-discount-code
-    {
-        margin: 0;
-    }
-
-    .discount-code
-    {
-        position: absolute;
-
-        z-index: 2;
-    }
-
-    .discount-code h2
-    {
-        padding-left: 0;
-        width: 80%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .discount-code p 
-    {
-        width: 80%;
-        margin: auto;
-        padding-bottom: 10%;
-        text-align: center;
-    }
-
-    .discount-code button 
-    {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-
-    
-    }
-
-    .img-spaguetti-back
-    {
-        transform: translate(30%);
-        opacity: 0.4;
-    }
-}
+/*****Responsive du (HEADER / ABOUT-US / CONTACT-US)*****/
 
 @media(max-width: 1242px)
 {
-
-    /**********HEADER**********/
-
     header
     {
         height: 100vh;
@@ -814,6 +801,11 @@ h3
         right: 89px;
     }  
 
+    .img-contact-us 
+    {
+        margin: 50px auto;
+    }
+
     .contact-us
     {
         height: auto;
@@ -823,7 +815,7 @@ h3
     .p-contact-us
     {
         text-align: center;
-        margin: 20px 0;
+        padding: 50px 30px 0 30px;
         display: flex;
         flex-flow: column wrap;
     }

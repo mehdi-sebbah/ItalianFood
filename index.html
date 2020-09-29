@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
     <link rel="shortcut icon" href="asset/img/favicone.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Roboto:wght@100;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
     <script src="asset/function.js"></script>
     <title>Italianfood</title>
 </head>
@@ -19,9 +26,9 @@
         </div>
         <div class="header-nav">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Order</a>
-            <a href="#">Contact Us</a>
+            <a href="#ancre-about">About</a>
+            <a href="#ancre-order">Order</a>
+            <a href="#ancre-contact">Contact Us</a>
         </div>
     </div>
     <nav class="nav" onclick="myfunction(this)">
@@ -30,9 +37,9 @@
         </div>
         <div class="header-nav-2" onclick="myfunction(this)">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Order</a>
-            <a href="#">Contact Us</a>
+            <a href="#ancre-about">About</a>
+            <a href="#ancre-order">Order</a>
+            <a href="#ancre-contact">Contact Us</a>
         </div>
     </nav>
     </nav>
@@ -46,18 +53,19 @@
     </header>
     <main>
         <div class="container">
-            <div class="about-us">
+            <div class="about-us" id="ancre-about">
                 <div class="img-rose">
                     <img src="asset/img/main/rose-background.png" alt="rose">
                 </div>
                 <div class="p-about-us">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                        viverra
                         maecenas accumsan lacus vel facilisis. </p>
                 </div>
             </div>
-            <div class="contact-us">
+            <div class="contact-us" id="ancre-contact">
                 <div class="img-contact-us">
                     <img src="asset/img/main/pate-fourchette.jpg" alt="bouché de spagheti">
                 </div>
@@ -104,7 +112,7 @@
                 <p class="p-van-gogh">‘’what is done in love is well done’’</p>
                 <p class="name-van-gogh">Vincent Van Gogh</p>
             </div>
-            <div class="map">
+            <div class="map" id="ancre-order">
                 <img src="asset/img/main/point-lieu.png" alt="point">
                 <div class="info-map">
                     <div class="map-p-1">
