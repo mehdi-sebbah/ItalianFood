@@ -393,6 +393,7 @@ background-color: #736c4d;
 #mapid
 {
     height: 100vh;
+    z-index: 100;
 }
 
 .map img
@@ -760,7 +761,7 @@ background-color: #736c4d;
 
 /*****Responsive du (HEADER / ABOUT-US / CONTACT-US)*****/
 
-@media(max-width: 1242px)
+@media (max-width: 1242px)
 {
     header
     {
@@ -778,13 +779,13 @@ background-color: #736c4d;
     .big-title
     {
         position: initial;
-        padding-top: 400px;
+        padding-top: 544px;
         font-size: 100px;
     }
     .header-button
     {
         position: initial;
-        padding-top: 50px;
+        padding: 50px 0;
     }
 
     .img-rose
@@ -815,5 +816,20 @@ background-color: #736c4d;
         padding: 50px 30px 0 30px;
         display: flex;
         flex-flow: column wrap;
+    }
+}
+
+/*ajustement du header par rapport au height*/
+
+@media (max-height: 830px)
+{
+    .big-title
+    {
+        padding-top: 347px;
+    }
+
+    .header-button
+    {
+        padding-top: 15px;
     }
 }
