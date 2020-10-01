@@ -520,6 +520,8 @@ background-color: #736c4d;
 /**********RESPONSIVE**********/
 
 
+
+
 /*Largeur du texte (contact-us)*/
 
 @media(max-width: 650px)
@@ -841,5 +843,63 @@ background-color: #736c4d;
     .header-button
     {
         padding-top: 15px;
+    }
+}
+
+/*Responsive téléphone*/
+
+@media(max-width: 420px)
+{
+    .nav-title
+    {
+        margin: 5px;
+    }
+
+    .big-title
+    {
+        font-size: 74px;
+    }
+
+    .big-title span
+    {
+        font-size: 50px;
+    }
+
+    .p-about-us
+    {
+        width: 80%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .p-contact-us
+    {
+        padding: 20px 10px 10px 10px ;
+        width: 100%;
+        margin: auto;
+    }
+
+    .p-van-gogh
+    {
+        font-size: 1.3rem;
+    }
+
+    .row-2-footer
+    {
+        margin: auto;
+    }
+
+    .discount-code button, .discount-code h2, .discount-code p
+    {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    .menu-burger
+    {
+        right: -5%;
+        top: 4%;
     }
 }
