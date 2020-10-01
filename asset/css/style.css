@@ -99,6 +99,11 @@ body
     font-size: 16px;
 }  
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 .menu-burger
 {
     display: none;
@@ -142,6 +147,11 @@ body
 .nav-title
 {
     margin: auto auto auto 80px;
+}
+
+.nav-title img
+{
+    height: 100px;
 }
 
 .header-nav
