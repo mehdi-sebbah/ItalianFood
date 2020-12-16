@@ -117,7 +117,7 @@ html
 
     align-items: center;
     position: fixed;
-    top: -105%;
+    top: -108%;
     transition: top 0.5s ease;
 
     right: 0;
@@ -326,6 +326,7 @@ background-color: #736c4d;
     align-items: center;
     margin-top: 200px;
     margin-left: 10%;
+    overflow: hidden;
 }
 
 .discount-code 
@@ -362,6 +363,7 @@ background-color: #736c4d;
 .img-spaguetti-back
 {
     transform: translate(50%);
+    overflow: hidden;
 }
 
 /*IMAGE 100% LARGEUR*/
@@ -848,7 +850,7 @@ background-color: #736c4d;
 
 /*Responsive téléphone*/
 
-@media(max-width: 420px)
+@media(max-width: 450px)
 {
     .nav-title
     {
